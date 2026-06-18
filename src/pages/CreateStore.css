@@ -1,0 +1,74 @@
+.hero-section {
+  background-color: #1b0992;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+}
+
+/* CARD */
+.profile-container {
+  max-width: 800px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+/* TITLE */
+.profile-title {
+  text-align: center;
+  color: #1b0992;
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+.profile-input,
+.profile-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* TEXTAREA */
+.profile-textarea {
+  height: 80px;
+}
+
+/* SAVE BUTTON */
+.save-btn {
+  background-color: #198754;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.save-btn:hover {
+  background-color: #157347;
+}
+
+/* BACK BUTTON */
+.back-btn {
+  background-color: gray;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}

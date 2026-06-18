@@ -1,0 +1,90 @@
+.hero-section {
+  background: #080275;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-title {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+}
+
+.medicine-container {
+  
+  max-width: 1100px;
+  margin: auto;
+  padding: 20px;
+}
+.desktop-menu {
+  display: flex;
+  justify-content: flex-end; /* move buttons to right side */
+  gap: 10px;
+  flex-wrap: wrap;
+}
+.desktop-menu {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.desktop-menu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+}
+
+.search-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.medicine-card {
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.medicine-card p {
+  margin: 8px 0;
+}
+
+.action-btn {
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+.expired-text {
+  color: red;
+  font-weight: bold;
+}
+
+.empty-msg {
+  text-align: center;
+  color: gray;
+  font-size: 18px;
+}
+.search-box {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.search-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #080275;
+}

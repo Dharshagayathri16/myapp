@@ -1,0 +1,50 @@
+.hero-section {
+  background-color: #1b0992;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+}
+
+.viewstore-container {
+  max-width: 700px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+}
+
+.store-select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.summary-card {
+  border-top: 1px solid #ddd;
+  padding-top: 20px;
+}
+
+.summary-card p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 15px;
+  background: #f5f5f5;
+}

@@ -1,0 +1,135 @@
+/* Hero Section */
+.hero-section {
+  background-color: #11036b;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+.hero-title {
+  margin: 0;
+  font-size: 32px;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+/* Main Card */
+.billing-card {
+  background: white;
+  padding: 25px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(210, 202, 202, 0.15);
+}
+
+/* Form */
+.form-label {
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.form-control {
+  margin-bottom: 15px;
+}
+
+/* Bill Items */
+.bill-item {
+  background: #f8f9fa;
+  padding: 10px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+/* Grand Total */
+.total-box {
+  background: #e8f5e9;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Buttons */
+.action-btn {
+  margin-right: 10px;
+}
+.btn-history{
+  background:#0d6efd;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+  margin-bottom:5px;
+}
+
+.btn-history:hover{
+  background:#0d6efd;
+}
+
+.btn-add{
+  background:#0d6efd;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+  margin-top:15px;
+}
+
+.btn-add:hover{
+  background:#0b5ed7;
+}
+
+.btn-pay{
+  background:#0d6efd;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.btn-pay:hover{
+  background:#0d6efd;
+}
+
+.btn-generate{
+  background:#fd7e14;
+  color:white;
+  border:none;
+  padding:10px 20px;
+  border-radius:8px;
+  font-weight:bold;
+  cursor:pointer;
+}
+
+.btn-generate:hover{
+  background:#e96b02;
+}
+
+.bill-item{
+  background:white;
+  padding:12px;
+  margin:10px 0;
+  border-radius:8px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.total-box{
+  background:#198754;
+  color:white;
+  padding:15px;
+  border-radius:10px;
+  font-size:22px;
+  font-weight:bold;
+  text-align:center;
+}

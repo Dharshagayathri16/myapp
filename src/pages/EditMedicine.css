@@ -1,0 +1,33 @@
+.hero-section {
+  background: #080275;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.hero-title {
+  font-size: 38px;
+  font-weight: bold;
+}
+
+.hero-subtitle {
+  font-size: 18px;
+}
+
+.edit-container {
+  max-width: 700px;
+  margin: 30px auto;
+  padding: 20px;
+}
+
+.edit-card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.update-btn {
+  width: 100%;
+  font-weight: bold;
+}

@@ -1,0 +1,42 @@
+.hero-section {
+  background: #1b0992;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.batch-card {
+  max-width: 900px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+}
+
+.batch-title {
+  text-align: center;
+  color: #1b0992;
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+.action-btn {
+  margin-top: 15px;
+  margin-right: 10px;
+}
+
+.form-label {
+  font-weight: 600;
+  margin-top: 12px;
+}
+
+.form-control,
+.form-select {
+  margin-bottom: 15px;
+}
+
+.button-group {
+  text-align: center;
+  margin-top: 20px;
+}
