@@ -27,7 +27,7 @@ function EditStore() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:5000/stores"
+        "https://test-medibill-server.ramchintech.com/stores"
       );
 
       const data = await response.json();
@@ -48,7 +48,7 @@ function EditStore() {
     try {
 
       const response = await fetch(
-        `http://127.0.0.1:5000/store/${storeId}`
+        `https://test-medibill-server.ramchintech.com/store/${storeId}`
       );
 
       const data = await response.json();
@@ -73,7 +73,7 @@ function EditStore() {
     try {
 
       const response = await fetch(
-        `http://127.0.0.1:5000/update-store/${selectedStore}`,
+        `https://test-medibill-server.ramchintech.com/update-store/${selectedStore}`,
         {
           method: "PUT",
           headers: {

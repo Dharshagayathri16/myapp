@@ -7,10 +7,11 @@ CORS(app)
 
 # Database Configuration
 db_config = {
-    'host': 'localhost',
-    'user': 'root',
-    'password': '',
-    'database': 'medicine_management'
+    "host": "2a02:4780:12:f6a7::1",
+    "user": "schoolAttendance",
+    "password": "Sensarsoft@123",
+    "database": "medicine_management",
+    "port": 3306
 }
 
 # Database Connection

@@ -9,7 +9,7 @@ function BillHistory() {
 
   useEffect(() => {
 
-    fetch("http://127.0.0.1:5000/bill-history")
+    fetch("https://test-medibill-server.ramchintech.com/bill-history")
       .then(res => res.json())
       .then(data => setBills(data))
       .catch(err => console.log(err));

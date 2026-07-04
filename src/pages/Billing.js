@@ -21,7 +21,7 @@ useEffect(() => {
   const storeId = localStorage.getItem("store_id");
 
   fetch(
-    `http://127.0.0.1:5000/view-medicines/${storeId}`
+    `https://test-medibill-server.ramchintech.com/view-medicines/${storeId}`
   )
     .then(res => res.json())
     .then(data => {
@@ -93,7 +93,7 @@ useEffect(() => {
   try {
 
     const response = await fetch(
-      "http://127.0.0.1:5000/generate-bill",
+      "https://test-medibill-server.ramchintech.com/generate-bill",
       {
         method: "POST",
         headers: {

@@ -18,7 +18,7 @@ function BatchHistory() {
     try {
 
       const response = await fetch(
-        `http://127.0.0.1:5000/batch-history/${id}`
+        `https://test-medibill-server.ramchintech.com/batch-history/${id}`
       );
 
       const data = await response.json();

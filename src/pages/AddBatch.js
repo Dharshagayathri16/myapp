@@ -46,7 +46,7 @@ useEffect(() => {
 
   const storeId = localStorage.getItem("store_id");
 
-  fetch(`http://127.0.0.1:5000/medicines/${storeId}`)
+  fetch(`https://test-medibill-server.ramchintech.com/medicines/${storeId}`)
     .then(res => res.json())
     .then(data => {
       console.log("Medicines from DB:", data);  // 👈 IMPORTANT
@@ -60,7 +60,7 @@ useEffect(() => {
   try {
 
     const response = await fetch(
-      "http://127.0.0.1:5000/add-batch",
+      "https://test-medibill-server.ramchintech.com/add-batch",
       {
         method: "POST",
         headers: {

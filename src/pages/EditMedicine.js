@@ -25,7 +25,7 @@ function EditMedicine() {
     try {
 
       const response = await fetch(
-        `http://127.0.0.1:5000/medicine/${id}`
+        `https://test-medibill-server.ramchintech.com/medicine/${id}`
       );
 
       const data = await response.json();
@@ -46,7 +46,7 @@ function EditMedicine() {
     try {
 
       const response = await fetch(
-        `http://127.0.0.1:5000/update-medicine/${id}`,
+        `https://test-medibill-server.ramchintech.com/update-medicine/${id}`,
         {
           method: "PUT",
           headers: {

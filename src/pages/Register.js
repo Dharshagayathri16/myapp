@@ -11,7 +11,7 @@ const handleRegister = async () => {
 try 
 {
 const response = await fetch(
-"http://127.0.0.1:5000/register",
+"https://test-medibill-server.ramchintech.com/register",
 {
 method: "POST",
 headers: {

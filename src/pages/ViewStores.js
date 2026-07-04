@@ -22,7 +22,7 @@ function ViewStores() {
     try {
 
       const response = await fetch(
-        "http://127.0.0.1:5000/stores"
+        "https://test-medibill-server.ramchintech.com/stores"
       );
 
       const data = await response.json();
@@ -43,7 +43,7 @@ function ViewStores() {
     try {
 
       const response = await fetch(
-        `http://127.0.0.1:5000/store-summary/${storeId}`
+        `https://test-medibill-server.ramchintech.com/store-summary/${storeId}`
       );
 
       const data = await response.json();

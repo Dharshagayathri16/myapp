@@ -41,7 +41,7 @@ function AddMedicine() {
 
   const handleAddMedicine = async () => {
     try {
-      const response = await fetch("http://127.0.0.1:5000/add-medicine", {
+      const response = await fetch("https://test-medibill-server.ramchintech.com/add-medicine", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

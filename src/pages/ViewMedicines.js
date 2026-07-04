@@ -24,7 +24,7 @@ function ViewMedicines() {
     try {
       const storeId = localStorage.getItem("store_id");
       const response = await fetch(
-        `http://127.0.0.1:5000/view-medicines/${storeId}`
+        `https://test-medibill-server.ramchintech.com/view-medicines/${storeId}`
       );
       const data = await response.json();
       setMedicines(data);
@@ -50,7 +50,7 @@ function ViewMedicines() {
     if (!confirmDelete) return;
     try {
       const response = await fetch(
-        `http://127.0.0.1:5000/delete-medicine/${id}`,
+        `https://test-medibill-server.ramchintech.com/delete-medicine/${id}`,
         {
           method: "DELETE",
         }

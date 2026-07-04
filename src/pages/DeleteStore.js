@@ -16,7 +16,7 @@ function DeleteStore() {
 
   const fetchStores = async () => {
     try {
-      const res = await fetch("http://127.0.0.1:5000/stores");
+      const res = await fetch("https://test-medibill-server.ramchintech.com/stores");
       const data = await res.json();
       setStores(data);
     } catch (err) {
@@ -29,7 +29,7 @@ function DeleteStore() {
     setSelectedStore(id);
 
     try {
-      const res = await fetch(`http://127.0.0.1:5000/store/${id}`);
+      const res = await fetch(`https://test-medibill-server.ramchintech.com/store/${id}`);
       const data = await res.json();
       setStoreInfo(data);
     } catch (err) {
@@ -53,7 +53,7 @@ function DeleteStore() {
 
     try {
       const res = await fetch(
-        `http://127.0.0.1:5000/delete-store/${selectedStore}`,
+        `https://test-medibill-server.ramchintech.com/delete-store/${selectedStore}`,
         { method: "DELETE" }
       );
 

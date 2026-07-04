@@ -23,7 +23,7 @@ function Dashboard() {
   const fetchDashboardData = async () => {
     try {
       const storeId = localStorage.getItem("store_id");
-      const response = await fetch(`http://127.0.0.1:5000/dashboard/${storeId}`);
+      const response = await fetch(`https://test-medibill-server.ramchintech.com/dashboard/${storeId}`);
       const data = await response.json();
 
       setTotalMedicines(data.total_medicines);
