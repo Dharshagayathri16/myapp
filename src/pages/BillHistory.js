@@ -9,7 +9,9 @@ function BillHistory() {
 
   useEffect(() => {
 
-    fetch("https://test-medibill-server.ramchintech.com/bill-history")
+    const storeId = localStorage.getItem("store_id");
+    
+    fetch(`https://test-medibill-server.ramchintech.com/bill-history/${storeId}`)
       .then(res => res.json())
       .then(data => setBills(data))
       .catch(err => console.log(err));

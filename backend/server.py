@@ -498,6 +498,7 @@ def generate_bill():
     total_amount = data.get('total_amount')
     payment_id = data.get('payment_id')
     bill_items = data.get('bill_items')
+    store_id = data.get('store_id')
 
     conn = get_db_connection()
     cursor = conn.cursor()
@@ -509,9 +510,9 @@ def generate_bill():
             """
             INSERT INTO bills
             (customer_name, total_amount, payment_id)
-            VALUES (%s, %s, %s)
+            VALUES (%s, %s, %s, %s)
             """,
-            (customer_name, total_amount, payment_id)
+            (customer_name, total_amount, payment_id,store_id)
         )
 
         bill_id = cursor.lastrowid
@@ -568,26 +569,25 @@ def generate_bill():
         conn.close()
 
 # bill history display
-@app.route('/bill-history', methods=['GET'])
-def bill_history():
+@app.route('/bill-history/<int:store_id>', methods=['GET'])
+def bill_history(store_id):
 
     conn = get_db_connection()
     cursor = conn.cursor(dictionary=True)
 
-    cursor.execute(
-        """
+    cursor.execute("""
         SELECT *
         FROM bills
+        WHERE store_id = %s
         ORDER BY id DESC
-        """
-    )
+    """, (store_id,))
 
     bills = cursor.fetchall()
 
     cursor.close()
     conn.close()
 
-    return bills
+    return jsonify(bills)
 
     
 @app.route('/bill/<int:bill_id>')
@@ -903,4 +903,4 @@ def delete_store(store_id):
         conn.close()
 # RUN SERVER
 if __name__ == '__main__':
-    app.run(debug=True, port=5000)
+    app.run(debug=True, port=5002)

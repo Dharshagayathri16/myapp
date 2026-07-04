@@ -90,6 +90,8 @@ useEffect(() => {
 
   const handleGenerateBill = async (paymentId) => {
 
+    const storeId = localStorage.getItem("store_id");
+
   try {
 
     const response = await fetch(
@@ -103,7 +105,8 @@ useEffect(() => {
   customer_name: customerName,
   total_amount: grandTotal,
   payment_id: paymentId,
-  bill_items: billItems
+  bill_items: billItems,
+  store_id: storeId
 })
       }
     );
